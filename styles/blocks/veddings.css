@@ -1,16 +1,24 @@
 .veddings {
     box-sizing: border-box;
-
     display: grid;
     justify-items: center;
-    /*grid-gap: 2em;*/
 }
 
-.grid-row, .grid-row-story {
+.grid-row {
+    box-sizing: border-box;
     display: grid;
-  
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    max-width: 1024px;
+    margin-bottom: 5em;
 }
 
+.grid-row-story {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5em;
+}
+/*
 @media (min-width: 640px) {
    .grid-row:first-child {
         grid-template-columns: 1.8fr 1.6fr;
@@ -28,42 +36,51 @@
 
 .grid-col {
     margin: 0 2em 2em;
-}
-
-h3 {
+    min-width: 40%;
+}*/
+.love-story-headings, 
+.offer,
+.response-heading,
+.contacts-heading {
+    font-size: 3em;
     text-align: center;
-    font-size: 2em;
+    margin-bottom: 2em;
+    color: #524d56cc;
 }
 
-h3 > a {
-    text-decoration: none;
+.video-caption,
+.response-name {
+    text-align: center;
     color: #878787;
 }
 
-h2 {
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 2em;
-    color: rebeccapurple;
-}
-
-
 ul:before{
     content:attr(aria-label);
-    font-size:120%;
     font-weight:bold;
     margin-left:-15px;
 }
 
 .price {
     text-align: center;
-    font-size: x-large;
     padding-top: 2em;
     color: #878799;
 }
 
-.price-type, .contact-us-container > p {
-    margin-bottom: 2em;
+.price-list,
+.price-check {
+    font-size: 1.4em;
+}
+
+.price-headings, 
+.cost, 
+.price-image,
+.time,
+.response-image {
+    margin-bottom: 1.4em;
+}
+
+.price-type {
+    margin-bottom: 6em;
 }
 
 .container {
@@ -86,10 +103,6 @@ ul:before{
     font-size: 0.7em;
 }
 
-h2.prise-headings {
-    font-size: 1em;
-}
-
 .offer {
     margin-bottom: 0.8em;
 }
@@ -101,7 +114,7 @@ h2.prise-headings {
 .container-response {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 3em;
+    margin-bottom: 5em;
 }
 
 .response-card {
@@ -112,11 +125,6 @@ h2.prise-headings {
     width: 100%;
     border-radius: 50%;
     object-fit: cover;
-}
-
-.response-name {
-    color: #878799;
-    margin-bottom: 2em;
 }
 
 .response-text {
@@ -141,14 +149,61 @@ h2.prise-headings {
     margin-bottom: 2em;
 }
 
-/*.about-us::before {
-    content: "";
-    width: 100%;
-    height: 6em;
-    background-color: #878799;
-    position: absolute;
-}*/
-
 .contact-us-container {
     text-align: center;
 }
+
+#to-top-button {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    cursor: pointer; 
+    padding: 1.5em; 
+    border-radius: 50%; 
+    background-image: url(../../images/Untitled.png);
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s;
+  }
+  
+  #to-top-button:hover {
+    transform: scale(130%);
+  }
+
+  .fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 2em;
+    /* text-rendering: auto; */
+    /* -webkit-font-smoothing: antialiased; */
+    -moz-osx-font-smoothing: grayscale;
+    color: #2b2b2b;
+  }
+  .fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 2em;
+    /* text-rendering: auto; */
+    /* -webkit-font-smoothing: antialiased; */
+    -moz-osx-font-smoothing: grayscale;
+    color: #2b2b2b;
+  }
+
+  .T.Title_module_title__4ca3ce89 {
+    display: none;
+  }
+
+  .social-container {
+    justify-content: space-around;
+    display: flex;
+    height: 10vh;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 25%;
+    margin: 5em auto 3em;
+    border-top: 3px solid #b5b5b5
+  }
