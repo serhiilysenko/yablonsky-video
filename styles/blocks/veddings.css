@@ -18,26 +18,48 @@
     justify-content: space-evenly;
     margin-bottom: 5em;
 }
-/*
-@media (min-width: 640px) {
-   .grid-row:first-child {
-        grid-template-columns: 1.8fr 1.6fr;
-    }
+
+@media (max-width: 935px) {
+   
     .grid-row {
-        grid-template-columns: 1.6fr 1.8fr;
+        grid-template-columns: 1fr;
     }
-   .grid-row:last-child {
-        grid-template-columns: 1.8fr 1.6fr;
+    .grid-col {
+        min-width: 0;
     }
-    .grid-row-story {
-        grid-template-columns: 1fr 1fr;
-    }
-} 
+
+        .grid-row-story,
+        .container,
+        .container-response,
+        .contacts-container {
+            flex-direction: column;
+            align-content: center;
+    flex-wrap: wrap;
+        }
+    
+        .about-us {
+            margin: 0 auto;
+        }
+
+        .love-story-headings, 
+.offer,
+.response-heading,
+.contacts-heading {
+    margin-bottom: 1em;
+    font-size: 1em;
+}
+
+.price-card, 
+.response-card {
+    min-width: 65%;
+}
+  } 
 
 .grid-col {
     margin: 0 2em 2em;
     min-width: 40%;
-}*/
+}
+
 .love-story-headings, 
 .offer,
 .response-heading,
@@ -137,6 +159,7 @@ ul:before{
 }
 .contacts-container > img {
     border-radius: 1%;
+    object-fit: none;
 }
 
 .about-us {
@@ -178,8 +201,6 @@ ul:before{
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
     font-size: 2em;
-    /* text-rendering: auto; */
-    /* -webkit-font-smoothing: antialiased; */
     -moz-osx-font-smoothing: grayscale;
     color: #2b2b2b;
   }
@@ -187,13 +208,12 @@ ul:before{
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
     font-size: 2em;
-    /* text-rendering: auto; */
-    /* -webkit-font-smoothing: antialiased; */
     -moz-osx-font-smoothing: grayscale;
     color: #2b2b2b;
   }
 
-  .T.Title_module_title__4ca3ce89 {
+  
+.Title_module_header__4ca3ce89 {
     display: none;
   }
 
@@ -203,7 +223,12 @@ ul:before{
     height: 10vh;
     align-content: center;
     flex-wrap: wrap;
-    width: 25%;
-    margin: 5em auto 3em;
+    width: 50%;
+    margin: 3em auto 0;
     border-top: 3px solid #b5b5b5
   }
+
+.vimeo-player {
+    width: 430px;
+    height: 182px;
+}
