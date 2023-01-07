@@ -6,22 +6,24 @@
     /*grid-gap: 2em;*/
 }
 
-.grid-row {
+.grid-row, .grid-row-story {
     display: grid;
   
 }
 
 @media (min-width: 640px) {
-   /* .grid-row:first-child {
-        grid-template-columns: 2fr 1fr;
-    }*/
+   .grid-row:first-child {
+        grid-template-columns: 1.8fr 1.6fr;
+    }
     .grid-row {
+        grid-template-columns: 1.6fr 1.8fr;
+    }
+   .grid-row:last-child {
+        grid-template-columns: 1.8fr 1.6fr;
+    }
+    .grid-row-story {
         grid-template-columns: 1fr 1fr;
     }
-   /* .grid-row:last-child {
-        grid-template-columns: 1fr 2fr;
-    }*/
-    
 } 
 
 .grid-col {
@@ -60,7 +62,7 @@ ul:before{
     color: #878799;
 }
 
-.price-type {
+.price-type, .contact-us-container > p {
     margin-bottom: 2em;
 }
 
@@ -90,4 +92,63 @@ h2.prise-headings {
 
 .offer {
     margin-bottom: 0.8em;
+}
+
+.additional, .who-we-are {
+    margin-bottom: 3em;
+}
+
+.container-response {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 3em;
+}
+
+.response-card {
+    max-width: 25%;
+}
+
+.response-image {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.response-name {
+    color: #878799;
+    margin-bottom: 2em;
+}
+
+.response-text {
+    text-align: center;
+}
+
+.contacts-container {
+    display: flex;
+    justify-content: space-around;
+}
+.contacts-container > img {
+    border-radius: 1%;
+}
+
+.about-us {
+    position: relative;
+    width: 40%;
+}
+
+.greets, .contact-us {
+    padding-top: 6em;
+    margin-bottom: 2em;
+}
+
+/*.about-us::before {
+    content: "";
+    width: 100%;
+    height: 6em;
+    background-color: #878799;
+    position: absolute;
+}*/
+
+.contact-us-container {
+    text-align: center;
 }
