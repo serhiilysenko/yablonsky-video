@@ -1,0 +1,12 @@
+.logo {
+  margin-bottom: 1.5em;
+}
+
+.logo.link {
+  display: flex;
+}
+
+.logo.image {
+  width: 300px;
+  margin: 0 auto;
+}
