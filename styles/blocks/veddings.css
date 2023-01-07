@@ -1,0 +1,93 @@
+.veddings {
+    box-sizing: border-box;
+
+    display: grid;
+    justify-items: center;
+    /*grid-gap: 2em;*/
+}
+
+.grid-row {
+    display: grid;
+  
+}
+
+@media (min-width: 640px) {
+   /* .grid-row:first-child {
+        grid-template-columns: 2fr 1fr;
+    }*/
+    .grid-row {
+        grid-template-columns: 1fr 1fr;
+    }
+   /* .grid-row:last-child {
+        grid-template-columns: 1fr 2fr;
+    }*/
+    
+} 
+
+.grid-col {
+    margin: 0 2em 2em;
+}
+
+h3 {
+    text-align: center;
+    font-size: 2em;
+}
+
+h3 > a {
+    text-decoration: none;
+    color: #878787;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 2em;
+    color: rebeccapurple;
+}
+
+
+ul:before{
+    content:attr(aria-label);
+    font-size:120%;
+    font-weight:bold;
+    margin-left:-15px;
+}
+
+.price {
+    text-align: center;
+    font-size: x-large;
+    padding-top: 2em;
+    color: #878799;
+}
+
+.price-type {
+    margin-bottom: 2em;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 3em;
+}
+
+.price-card {
+    max-width: 28%;
+}
+
+.price-image {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.price-check > li {
+    list-style: none;
+    font-size: 0.7em;
+}
+
+h2.prise-headings {
+    font-size: 1em;
+}
+
+.offer {
+    margin-bottom: 0.8em;
+}

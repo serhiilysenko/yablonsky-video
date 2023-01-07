@@ -1,0 +1,10 @@
+.main {
+    display: grid;
+    font-family: Pacifico, serif;
+}
+
+ 
+video {
+width: 100%; 
+height: auto;
+}
